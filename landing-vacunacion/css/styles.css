@@ -1,0 +1,517 @@
+body {
+	font-family: sans-serif;
+	color: rgb(109,123,147);
+}
+
+img {
+	background-image: linear-gradient(to right,rgb(15, 144, 228), rgb(41, 112, 221));
+	display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+	img {
+		width: 50%;
+		display: block;
+	}
+}
+
+/* Header */
+.header {
+	background-image: 
+		linear-gradient(to right, rgb(255,255, 255) 50%, 
+		rgb(230, 244, 252) 51%, rgb(233, 241, 252));	
+	padding: 1em 0.5em;	
+}
+
+.main-nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.main-menu {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-menu__item {
+	padding: 10px;
+}
+
+.main-menu__link,
+.main-menu__button {
+	text-decoration: none;
+	color: inherit;
+}
+
+.main-menu__link--blue {
+	color: rgb(40, 72, 198);
+	font-weight: bold;
+}
+
+.main-menu__button {
+	background-color: rgb(40, 72, 198);
+	color: rgb(255, 255, 255);
+	padding: 8px 12px;
+	border-radius: 2px;
+}
+
+
+@media screen and (min-width: 768px) {
+	.main-menu {
+		width: 90%;
+	}
+	.to-left {
+    	margin-right: auto;
+    }
+    .main-menu__link,
+	.main-menu__button {
+		font-weight: 600;
+		font-size: 15px;
+	}
+	.main-menu__link--blue {
+    	font-size: 25px;
+    }
+    .main-menu__item {
+		padding: 10px 20px;
+	}
+
+	.main-menu__button {
+		padding: 10px 16px;
+	}
+}
+
+
+/* Titles*/
+.main-title{
+	color: rgb(31,62,114);
+	font-weight: 800;
+	margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+	.main-title {
+		font-size: 50px;
+	}
+}
+
+.section-subtitle {
+	color: rgb(31,62,114);
+}
+
+@media screen and (min-width: 768px) {
+	.section-subtitle {
+		font-size: 40px;
+		font-weight: 800;
+	}
+}
+
+/* Banner*/
+.banner {
+	text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+	.banner {
+		display: flex;
+		position: relative;
+	}
+	.banner img {
+		order: 1;
+		width: 50%;
+	}
+	.banner-content {
+		border-radius: 1px solid red;
+		width: 50%;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		padding: 0 80px;	
+		text-align: left;
+	}
+	.main-subtitle {
+		font-size: 18px;
+	}
+
+	.banner-icons {
+		padding-top: 50px;
+	}
+}
+
+.banner i {
+	color: rgb(255,208,18);
+	background-color: rgb(255,250,233);
+	padding: 5px;
+}
+
+.schedule i {
+	color: rgb(57, 88, 212);
+	background-color: rgb(255,255,255);
+}
+
+.banner span {
+	color: rgb(124, 142, 172);
+	font-weight: 500;
+}
+
+.schedule {
+	background-color: rgba(255, 255, 255, 0.8);
+	box-shadow: 0 15px 15px -4px rgba(226,235,250,1);
+	width: 80%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	padding-top: 2em;
+}
+
+.schedule-info {
+	padding: 1em 0;
+}
+
+@media screen and (min-width: 768px) {
+	.schedule {
+		position: absolute;
+		bottom: 50px;
+		left: 90px;
+		height: 120px;
+		text-align: left;
+		width: 70%;
+		margin: 0;
+		padding: 0;
+	}
+	.schedule-info {
+		display: flex;
+		width: 100%;
+		justify-content: space-around;
+	}
+	.schedule-info p {
+		font-weight: bold;
+		padding-left: 1.8em;
+		margin-bottom: 1em;
+	}
+}
+
+.schedule i {
+	background-color: rgb(237, 244, 253);
+	padding: 5px;
+}
+
+/* Vaccine names */
+
+.vaccine-names {text-align: center;}
+.vaccine-names img {
+	background-image: none;
+	background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+	.vaccine-names {
+		display: flex;
+		padding: 2em 4em;
+	}
+	.vaccine-names img{
+		width: 25%;
+	}
+}
+
+
+/* Benefits section*/
+.section-benefits {
+	padding: 0 1em;
+	margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+	.section-benefits {
+		padding: 1em 80px;
+	}
+
+	.benefits-header {
+		width: 45%;
+		margin-bottom: 50px;
+	}
+
+	.benefits-header p{
+		font-size: 18px;
+	}
+
+	.benefits {
+		display: flex;
+		height: 300px;
+	}
+}
+
+.card-benefits {
+	padding: 1.5em;
+	box-shadow: 5px 5px 12px -8px rgba(109,123,147,0.5);
+	border-radius: 10px;
+}
+
+.card-benefits i {
+	background-color: rgb(237, 244, 253);
+	padding: 8px;
+	border-radius: 5px;
+	color: rgb(40, 72, 198);
+}
+.card-benefits__title {
+	color: rgb(31,62,114);
+	font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+	.card-benefits__title {
+		font-size: 18px;
+	}
+}
+
+/* Preparations section */
+.section-preparations{
+	padding: 0 1em;
+	margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+	.section-preparations {
+		display: flex;
+		padding-left: 0;
+	}
+
+	.section-preparations img {
+		align-self: center;
+	}
+
+	.preparations-content {
+		padding: 30px;
+	}
+}
+/* Benefits section accordion*/
+
+.accordion {
+	max-width: 800px;
+	width: 100%;
+  	background-color: white;
+}
+
+.accordion .container {
+  	position: relative;
+}
+
+/* Positions the labels relative to the .container. Adds padding to the top and bottom and increases font size. Also makes its cursor a pointer */
+
+.accordion .label {
+  	position: relative;
+  	padding: 10px 0;
+  	cursor: pointer;
+}
+
+/* Positions the plus sign 5px from the right. Centers it using the transform property. */
+
+.accordion .label::before {
+  	content: '+';
+  	position: absolute;
+  	top: 50%;
+  	right: 2px;
+  	font-size: 25px;
+  	transform: translateY(-50%);
+}
+
+/* Hides the content (height: 0), decreases font size, justifies text and adds transition */
+
+.accordion .content {
+  	position: relative;
+  	background: white;
+  	height: 0;
+  	max-width: 780px;
+  	width: 100%;
+  	overflow: hidden;
+  	transition: 0.5s;
+}
+
+/* Unhides the content part when active. Sets the height */
+
+.accordion .container.active .content {
+  	height: 80px;
+}
+
+/* Changes from plus sign to negative sign once active */
+
+.accordion .container.active .label::before {
+  	content: '-';
+  	font-size: 25px;
+}
+
+.container {
+	border: 1px solid rgba(109,123,147,0.1);
+	margin-bottom: 5px;
+	padding: .5em;
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		margin-bottom: 20px;
+	}
+}
+
+.label i {
+	background-color: rgb(237, 244, 253);
+	padding: 5px;
+	border-radius: 5px;
+	color: rgb(40, 72, 198);
+}
+
+.label span {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.content {
+	font-size: 14px;
+	padding-top: 1em;
+	padding-left: 2em;
+}
+
+
+
+
+/* Emergency section */
+.section-emergency {
+	padding: 0 1em;
+	margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+	.section-emergency {
+		display: flex;
+		padding: 0;
+	}
+
+	.section-emergency img {
+		order: 1;
+		align-self: center;
+
+	}
+
+	.emergency-content {
+		padding: 0 40px;
+	}
+
+	.emergency-content p {
+		margin-bottom: 60px;
+	}
+	.contacts {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+.contact {
+	padding: 2em 1em;
+	border: 1px solid rgba(109,123,147,0.1);
+	margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+	.contact {
+		margin-right: 10px;
+	}
+}
+.contact i {
+	background-color: rgb(237, 244, 253);
+	padding: 8px;
+	border-radius: 5px;
+	color: rgb(40, 72, 198);
+	font-size: 20px;
+}
+
+.contact-title {
+	color: rgb(31,62,114);
+	font-weight: bold;
+	padding-left: 0.5em;
+	font-size: 18px;
+}
+
+.contact-number {
+	display: block;
+	padding-left: 3.2em;
+}
+
+.contact-button {
+	color: rgb(40, 72, 198);
+	background-color: rgb(237, 244, 253);
+	padding: 1em 2em;
+	border: none;
+	border-radius: 5px;
+	margin-top: 20px;
+	font-weight: bold;
+	width: 100%;
+}
+
+.contact-button--blue {
+	background-color: rgb(40, 72, 198);
+	color: rgb(255, 255, 255);
+}
+
+/* Footer */
+
+.footer {
+	background-color: rgb(238,243,255);
+	padding: 1em 2em;
+}
+
+@media screen and (min-width: 768px) {
+	.footer {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+.footer-header {
+
+}
+
+@media screen and (min-width: 768px) {
+	.footer-header {
+		width: 50%;
+		padding: 30px;
+	}
+	.footer-main {
+		width: 50%;
+		display: flex;
+		justify-content: space-between;
+		padding: 30px;
+	}
+	.copyright {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		padding: 0 30px;
+	}
+
+	.copyright a {
+		margin-left: 20px;
+	}
+}
+.footer-title {
+	color: rgb(40, 72, 198);
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.footer-subtitle {
+	color: rgb(31,62,114);
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.footer-content a,
+.copyright a {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+	padding: 1em 0;
+}
