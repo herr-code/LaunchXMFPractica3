@@ -16,5 +16,5 @@ Bonus:
 
 ## Resultados
 
-- Landing de Vacunación [Sitio](https://dribbble.com/Adhiari_is)
+- Landing de Vacunación [Sitio](https://herr-code.github.io/LaunchXMFPractica3/)
 - Mercadotecnia para el sitio [marketing](https://github.com/herr-code/LaunchXMFPractica3/blob/main/marketing.md)
